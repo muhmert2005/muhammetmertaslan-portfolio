@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammet Mert Aslan - Portfolio</title>
+    <meta name="description" content="Portfolio of Muhammet Mert Aslan showcasing minimalistic and modern artworks.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Ethereal Glow -->
+    <div id="glow"></div>
+
+    <!-- Page Loader -->
+    <div id="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">MMA <span>Design</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="#gallery" data-i18n="nav_gallery">Design</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="controls">
+                <button id="lang-toggle" aria-label="Toggle Language">TR</button>
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2 class="title reveal">Muhammet Mert Aslan</h2>
+                <p class="subtitle reveal" data-i18n="hero_subtitle" style="transition-delay: 0.15s;">Exploring the boundaries of minimal and modern expression.</p>
+                <div class="reveal" style="transition-delay: 0.3s;"><a href="#gallery" class="btn" data-i18n="hero_btn">View Work</a></div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="section-container">
+                <h3 class="section-title reveal" data-i18n="gallery_title">Selected Works</h3>
+                <div class="grid">
+                    <!-- Talisca POTM Concept -->
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/work1.jpg" alt="Talisca Player of the Month" loading="lazy">
+                            <div class="overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4 data-i18n="art_1_title">Talisca - POTM Concept</h4>
+                            <p data-i18n="art_1_desc">A Fenerbahçe-themed 'Player of the Month' (POTM) concept design created using Canva, featuring typography and layered visual editing.</p>
+                        </div>
+                    </div>
+                    <!-- Alperen Sengun All Star -->
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/work2.png" alt="Alperen Sengun All Star" loading="lazy">
+                            <div class="overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4 data-i18n="art_2_title">Alperen Şengün: The Wizard</h4>
+                            <p data-i18n="art_2_desc">A digital sports poster created for NBA star Alperen Şengün, highlighting a dynamic color palette and modern fonts.</p>
+                        </div>
+                    </div>
+                    <!-- Match Day Visual 3-1 -->
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/work3.jpg" alt="Fenerbahce vs Barcelona 3-1" loading="lazy">
+                            <div class="overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4 data-i18n="art_3_title">Match Day Visual (3-1)</h4>
+                            <p data-i18n="art_3_desc">A digital score infographic created for the Fenerbahçe - Barcelona match, supported by corporate logos and a clear visual hierarchy.</p>
+                        </div>
+                    </div>
+                    <!-- Event Poster Design -->
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/work4.png" alt="Voice of Football Event" loading="lazy">
+                            <div class="overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4 data-i18n="art_4_title">Event Poster Design</h4>
+                            <p data-i18n="art_4_desc">A hierarchy and information-focused 'The Voice of Football' conference poster designed for a Üsküdar University event.</p>
+                        </div>
+                    </div>
+                    <!-- Champions League Matchday -->
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/work5.jpg" alt="Fenerbahce vs Barcelona Match Poster" loading="lazy">
+                            <div class="overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4 data-i18n="art_5_title">Champions League Matchday</h4>
+                            <p data-i18n="art_5_desc">A dynamic 'Matchday' design created for social media engagement, featuring visuals of Asensio and Pedri.</p>
+                        </div>
+                    </div>
+                    <!-- Tarik Biberovic Concept -->
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/biberovic.png" alt="Tarık Biberović - EuroLeague Concept" loading="lazy">
+                            <div class="overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4 data-i18n="art_6_title">Tarık Biberović - EuroLeague Concept</h4>
+                            <p data-i18n="art_6_desc">A Fenerbahçe-themed EuroLeague concept poster highlighting Tarık Biberović, featuring dramatic typography, custom lighting effects, and a stylized motion blur background.</p>
+                        </div>
+                    </div>
+                    <!-- National Team Fixture Design -->
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/national_team.jpg" alt="National Team Fixture Design" loading="lazy">
+                            <div class="overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4 data-i18n="art_7_title">National Team Fixture Design</h4>
+                            <p data-i18n="art_7_desc">A dynamic World Cup schedule infographic designed for the Turkish National Football Team, utilizing a gritty textured red background, bold condensed typography, and official team branding.</p>
+                        </div>
+                    </div>
+                    <!-- Anthony Edwards Believe That -->
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/anthony_edwards.jpg" alt="Anthony Edwards: Believe That" loading="lazy">
+                            <div class="overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4 data-i18n="art_8_title">Anthony Edwards: Believe That</h4>
+                            <p data-i18n="art_8_desc">A sophisticated NBA sports poster featuring Anthony Edwards, combining dual-layered player imagery with a custom floral textured background, geometric grid elements, and a clean color palette.</p>
+                        </div>
+                    </div>
+                    <!-- World Cup Group Standings -->
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/world_cup.png" alt="World Cup Group Standings" loading="lazy">
+                            <div class="overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4 data-i18n="art_9_title">World Cup Group Standings</h4>
+                            <p data-i18n="art_9_desc">A clean and high-contrast sports infographic displaying the World Cup Group D standings, featuring celebrating national team players, integrated team crests, and an organized data hierarchy.</p>
+                        </div>
+                    </div>
+                    <!-- Arda Güler & Kenan Yıldız Stats -->
+                    <div class="grid-item">
+                        <div class="img-wrapper">
+                            <img src="assets/arda_kenan.jpg" alt="Arda Güler & Kenan Yıldız: Next-Gen Stats" loading="lazy">
+                            <div class="overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4 data-i18n="art_10_title">Arda Güler & Kenan Yıldız: Next-Gen Stats</h4>
+                            <p data-i18n="art_10_desc">A sleek, high-contrast player stats infographic highlighting the 2025/2026 season achievements of Turkish rising stars Arda Güler and Kenan Yıldız, with clean typography and club branding.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-container">
+                <h3 class="section-title reveal" data-i18n="about_title">About Me</h3>
+                <p class="about-text reveal" data-i18n="about_text" style="transition-delay: 0.15s;">
+                    I am Muhammet Mert Aslan.<br>
+                    I am 20 years old and a New Media student at Üsküdar University. With my interest in the design world, I focus on developing creative solutions using digital media tools. I continue to improve myself in this field by blending my academic education with practical design projects.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-container">
+                <h3 class="section-title reveal" data-i18n="contact_title">Get In Touch</h3>
+                <p class="contact-text reveal" data-i18n="contact_text" style="transition-delay: 0.15s;">Interested in collaboration or learning more about my lecture?</p>
+                <div class="contact-info reveal" style="transition-delay: 0.3s;">
+                    <a href="mailto:maedits2005@gmail.com">maedits2005@gmail.com</a>
+                    <a href="tel:+905526431806">+90 552 643 18 06</a>
+                </div>
+                <div class="social-links reveal" style="transition-delay: 0.45s;">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=maedits2005@gmail.com" target="_blank" class="btn icon-btn" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        Gmail
+                    </a>
+                    <a href="https://instagram.com/19mertaslann07" target="_blank" class="btn icon-btn" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p data-i18n="footer_text">&copy; 2026 Muhammet Mert Aslan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </button>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <a id="lightbox-download" class="lightbox-download" download aria-label="Download Image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        </a>
+        <div class="img-magnifier-container">
+            <img class="lightbox-content" id="lightbox-img">
+            <div id="magnifier-lens" class="img-magnifier-glass"></div>
+        </div>
+        <div id="lightbox-caption"></div>
+        <div class="lightbox-tools">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+            <span>Designed with Canva</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
