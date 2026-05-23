@@ -39,6 +39,24 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Mobile Menu Toggle
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const navbar = document.getElementById('navbar');
+
+if (mobileMenuBtn && navbar) {
+    mobileMenuBtn.addEventListener('click', () => {
+        navbar.classList.toggle('mobile-open');
+    });
+
+    // Close menu when a link is clicked
+    const navLinks = navbar.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('mobile-open');
+        });
+    });
+}
+
 // Smooth reveal animation for elements on scroll is handled by revealObserver below
 // Language Toggle Logic
 const translations = {

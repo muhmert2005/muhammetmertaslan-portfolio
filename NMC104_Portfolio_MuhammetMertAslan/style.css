@@ -181,6 +181,20 @@ nav a:hover {
     padding: 0 2rem;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(-45deg, #050508, #121420, #0a0c16, #050508);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+[data-theme="light"] #hero {
+    background: linear-gradient(-45deg, #f0f2f5, #e0e5ec, #e8eaef, #f0f2f5);
+    background-size: 400% 400%;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 #hero::before {
@@ -400,8 +414,50 @@ footer p {
     .hero-content .title {
         font-size: 2.5rem;
     }
-    nav ul {
+    
+    #mobile-menu-btn {
+        display: inline-flex !important;
+        background: transparent;
+        border: none;
+        color: var(--text-color);
+        cursor: pointer;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    
+    nav#navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-color);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         display: none;
+        flex-direction: column;
+        padding: 1rem 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    nav#navbar.mobile-open {
+        display: flex;
+    }
+    
+    nav#navbar ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    nav#navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav#navbar ul li a {
+        display: block;
+        padding: 1rem;
+        font-size: 1.1rem;
     }
 }
 
